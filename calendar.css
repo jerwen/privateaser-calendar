@@ -1,0 +1,45 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	padding: .2em;
+}
+
+.calendar-wrapper {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+}
+
+.day-wrapper {
+	border: 1px solid #7bb2f6;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	min-height: 60vh;
+}
+
+.header {
+	border-bottom: .5px solid #4eec0c;
+	height: 40px;
+	padding-top: .3em;
+	text-align: center;
+}
+
+.event-wrapper {
+	flex: 1;
+	position: relative;
+}
+
+.event {
+	border: .5px solid #fc0404;
+	padding-top: .2em;
+	position: absolute;
+	text-align: center;
+}
+
+@media (max-width: 981px) {
+	.calendar-wrapper {
+		flex-direction: column;
+	}
+}
